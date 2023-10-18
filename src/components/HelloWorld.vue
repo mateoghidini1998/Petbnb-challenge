@@ -1,4 +1,5 @@
 <script setup>
+import AdressInput from './AdressInput.vue'
 import OptionButton from './OptionButton.vue'
 </script>
 
@@ -7,7 +8,7 @@ import OptionButton from './OptionButton.vue'
   <div class="p-4 w-[880px] bg-white rounded">
     <div class="w-full flex flex-col">
       <label for="">Pets</label>
-      <div class="flex w-1/2 justify-between">
+      <div class="flex w-1/2">
         <OptionButton icon="fa-solid fa-dog" label="Dog" />
         <OptionButton icon="fa-solid fa-cat" label="Cat" />
       </div>
@@ -15,11 +16,11 @@ import OptionButton from './OptionButton.vue'
     <div class="w-full flex flex-col">
       <label for="">At the babysitter's house</label>
       <div class="flex w-full" >
-        <div class="flex w-1/2 justify-between">
+        <div class="flex w-1/2">
           <OptionButton icon="fa-solid fa-suitcase" label="Staying" />
           <OptionButton icon="fa-solid fa-sun" label="Day care" />
         </div>
-        <div class="flex w-1/2 justify-evenly">
+        <div class="flex w-1/2">
           <OptionButton icon="fa-solid fa-home" label="The babysitter at home" />
           <OptionButton icon="fa-solid fa-paw" label="Exhaust service" />
           <OptionButton icon="fa-solid fa-key" label="Pet sitter" />  
@@ -28,9 +29,7 @@ import OptionButton from './OptionButton.vue'
         <div class="w-full flex flex-col">
           <label for="">Staying near</label>
           <div class="flex h-[60px]">
-            <div class="w-1/2 rounded border-[1px] border-[#DBDDB] border-solid">
-              <input type="text" class="h-full w-full">
-            </div>
+            <AdressInput/>
             <div class="w-1/3 rounded border-[1px] border-[#DBDDB] border-solid">
               <input type="date" class="h-full w-full">
             </div>
@@ -47,6 +46,7 @@ import OptionButton from './OptionButton.vue'
 export default {
   components: {
     OptionButton,
+    AdressInput,
   },
 
 }
