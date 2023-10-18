@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded w-1/2 max-w-[195px] h-[90px]  border-[1px] border-[#DBDDB] border-solid px-1"
+  <div class="rounded w-1/2 max-w-[195px] h-[90px]  border-[1px] border-[#DBDDB] border-solid px-1 mx-1"
   :class="buttonClass"
   >
     <button 
