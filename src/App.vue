@@ -1,11 +1,15 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/UI/Header.vue'
+import Main from './components/UI/Main.vue'
 </script>
 
 <template>
- 
-  <HelloWorld msg="Vite + Vue" />
+  <div class="h-screen flex flex-col">
+    <Header />
+    <Main class="flex-1" />
+  </div>
 </template>
+
 
 <style scoped>
 .logo {

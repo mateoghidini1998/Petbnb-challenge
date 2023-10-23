@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/2 rounded border-[1px] border-[#DBDDB] border-solid flex items-center relative">
+  <div class="w-full rounded border-[1px] border-[#DBDDB] border-solid flex items-center relative">
     <font-awesome-icon icon="fa-solid fa-map-marker" class="text-sm text-[#425864] absolute left-2.5" aria-hidden="true" />
     <input
       ref="autocompleteInput"
@@ -21,17 +21,17 @@ export default {
       const inputElement = this.$refs.autocompleteInput;
 
       const autocomplete = new google.maps.places.Autocomplete(inputElement, {
-        types: ["geocode"], // Puedes ajustar esto según tus necesidades (ej. solo direcciones)
+        types: ["geocode"], 
       });
 
       autocomplete.addListener("place_changed", this.placeChanged);
     },
     placeChanged() {
       const place = this.$refs.autocompleteInput.getPlace();
-      console.log(place); // Aquí puedes acceder a los detalles de la dirección seleccionada
+      console.log(place); 
     },
     handleInput() {
-      // Tu lógica personalizada cuando el usuario escribe en el campo de entrada
+      
     },
   },
 };
